@@ -1,7 +1,7 @@
 """Test linear machine learning module."""
 import numpy as np
 import torch
-from linear.linear import LinearRegression, LinearClassifier
+from mlcpt.linear.linear import LinearRegression, LinearClassifier
 torch.set_default_dtype(torch.float64)
 
 

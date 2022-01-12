@@ -1,7 +1,7 @@
 """Linear machine learning module."""
 import torch
-from _base import BaseMLModel
-from _loss.loss import Loss
+from mlcpt.ml._base import BaseMLModel
+from mlcpt.ml.loss.loss import Loss
 
 
 class LinearRegression(BaseMLModel):
@@ -56,4 +56,3 @@ class LinearClassifier(BaseMLModel):
 
     def pred(self):
         return torch.where(self.x @ self._w[1:] + self._w[0] > 0.0, 1, -1)
-
